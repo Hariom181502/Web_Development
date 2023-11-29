@@ -1,0 +1,10 @@
+@mixin textStyle($font-family,$font-weight){
+ font-family: $font-family;
+ font-weight: $font-weight;
+}
+
+@mixin flex-1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

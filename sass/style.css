@@ -1,0 +1,60 @@
+body {
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --primary-color:#333;
+  --pink-orange-color:#FF7F50;
+  --text-light-color:#fff;
+}
+
+section {
+  height: 100vh;
+  background-color: rgba(80, 220, 255, 0.219);
+  font-size: 3rem;
+}
+
+#scroll-to-top {
+  position: fixed;
+  bottom: 15px;
+  right: 15px;
+  background-color: var(--pink-orange-color);
+  height: 50px;
+  width: 50px;
+  border-radius: 50%;
+  text-align: center;
+  font-size: 24px;
+  cursor: pointer;
+}
+#scroll-to-top:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+}
+
+.loader {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  background-color: #fff;
+  z-index: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+nav ul li {
+  list-style: none;
+}
+nav ul li a {
+  text-decoration: none;
+  color: brown;
+}
+
+header {
+  background-color: cadetblue;
+  position: sticky;
+  top: 0;
+}/*# sourceMappingURL=style.css.map */

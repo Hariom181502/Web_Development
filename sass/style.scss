@@ -1,0 +1,72 @@
+// import all section css
+@import 'header';
+@import 'mixin';
+
+// html
+ body {
+    margin: 0;
+    padding: 0;
+}
+
+// root color
+:root{
+    --primary-color:#333;
+    --pink-orange-color:#FF7F50;
+    --text-light-color:#fff;
+}
+
+section {
+    height: 100vh;
+    background-color: rgba(80, 220, 255, 0.219);
+    font-size: 3rem;
+}
+
+// style
+
+
+// scroll to top
+#scroll-to-top {
+    position: fixed;
+    bottom: 15px;
+    right: 15px;
+    background-color: var(--pink-orange-color);
+    height: 50px;
+    width: 50px;
+    border-radius: 50%;
+    text-align: center;
+    font-size: 24px;
+    cursor: pointer;
+
+    &:hover {
+        background-color: var(--primary-color);
+        color: #fff;
+    }
+}
+
+// loader
+.loader{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-color: #fff;
+    z-index: 10;
+    @include flex-1;
+}
+nav {
+    ul li {
+    list-style: none;
+    a {
+        text-decoration: none;
+        color: brown;
+    }
+}
+}
+// Header
+header{
+    background-color: cadetblue;
+    position: sticky;
+    top: 0;
+}
+
