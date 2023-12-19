@@ -17,28 +17,28 @@ It performs the wrong operation 10% of the time.
 //!---- 1. Solution Start ------ //
 //!----------------------------- //
 
-let firstNumber = prompt('Enter first number');
-let operator = prompt('Enter operator');
-let secondNumber = prompt('Enter second number');
-let randomNumber = Math.ceil(Math.random() * 10);
-console.log('randomNumber',randomNumber);
+// let firstNumber = prompt('Enter first number');
+// let operator = prompt('Enter operator');
+// let secondNumber = prompt('Enter second number');
+// let randomNumber = Math.ceil(Math.random() * 10);
+// console.log('randomNumber',randomNumber);
 
-let wrongOperations = {
-   '+' : '-', 
-   '-' : '+', 
-   '*' : '/', 
-   '/' : '*', 
-};
+// let wrongOperations = {
+//    '+' : '-', 
+//    '-' : '+', 
+//    '*' : '/', 
+//    '/' : '*', 
+// };
 
-if (randomNumber > 10) 
-{
-    console.log(`Faulty Value is :- ${eval(`${firstNumber} ${operator} ${secondNumber}`)}`);
-}
-else 
-{
-    operator = wrongOperations[operator];
-    console.log(`Faulty Value is :- ${eval(`${firstNumber} ${operator} ${secondNumber}`)}`);
-};
+// if (randomNumber > 10) 
+// {
+//     console.log(`Faulty Value is :- ${eval(`${firstNumber} ${operator} ${secondNumber}`)}`);
+// }
+// else 
+// {
+//     operator = wrongOperations[operator];
+//     console.log(`Faulty Value is :- ${eval(`${firstNumber} ${operator} ${secondNumber}`)}`);
+// };
 
 //!----------------------------- //
 //!------ 1. Solution End ------ //
@@ -90,37 +90,39 @@ let otherWordsList = {
   3 : 'Hub',  
 };
 
-let function_1 = () => {
-    if (randomNo_1 == 1) {
-        return adjectiveList[1];
-    } else if (randomNo_1 == 2) {
-        return adjectiveList[2];
-    } else {
-        return adjectiveList[3];
-    }
-};
+console.log(`Business Name Generator is :- ${adjectiveList[randomNo_1]} ${shopNameList[randomNo_2]} ${otherWordsList[randomNo_3]}`);
 
-let function_2 = () => {
-    if (randomNo_2 == 1) {
-        return shopNameList[1];
-    } else if (randomNo_2 == 2) {
-        return shopNameList[2];
-    } else {
-        return shopNameList[3];
-    }
-};
+// let function_1 = () => {
+//     if (randomNo_1 == 1) {
+//         return adjectiveList[1];
+//     } else if (randomNo_1 == 2) {
+//         return adjectiveList[2];
+//     } else {
+//         return adjectiveList[3];
+//     }
+// };
 
-let function_3 = () => {
-    if (randomNo_3 == 1) {
-        return otherWordsList[1];
-    } else if (randomNo_3 == 2) {
-        return otherWordsList[2];
-    } else {
-        return otherWordsList[3];
-    }
-};
+// let function_2 = () => {
+//     if (randomNo_2 == 1) {
+//         return shopNameList[1];
+//     } else if (randomNo_2 == 2) {
+//         return shopNameList[2];
+//     } else {
+//         return shopNameList[3];
+//     }
+// };
+
+// let function_3 = () => {
+//     if (randomNo_3 == 1) {
+//         return otherWordsList[1];
+//     } else if (randomNo_3 == 2) {
+//         return otherWordsList[2];
+//     } else {
+//         return otherWordsList[3];
+//     }
+// };
  
-console.log(`Business Name Generator is :- ${function_1()} ${function_2()} ${function_3()}`);
+// console.log(`Business Name Generator is :- ${function_1()} ${function_2()} ${function_3()}`);
 
 //!----------------------------- //
 //!------ 2. Solution End ------ //
