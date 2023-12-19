@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array Traversing</title>
+</head>
+
+<body>
+   
+      <input type="text" id="inputElement"> 
+      <button type="button" onclick="getElement()">Get Input Element</button>
+
+      <br> <br>
+   <hr>
+    <script>
+    let numbers = [22,234,322,454,6768,454,784];
+       
+     for(let i = 0; i < numbers.length; i++){
+        document.write(`Array ${i} index value is = ${numbers[i]} <br/>`)
+     };
+     
+    
+
+     let accessValue = 4;
+     document.write(`<br/> Array 4 index value is = ${numbers[accessValue]}`);
+    
+
+   let getElement = () => {
+    let inputEl = document.getElementById('inputElement').value;
+     if(inputEl >= 0 && inputEl <= 6){
+      alert(numbers[inputEl]);
+     }
+     else{
+         alert('Please Enter valid input')
+     }
+   } 
+
+    </script>
+
+
+</body>
+
+</html>

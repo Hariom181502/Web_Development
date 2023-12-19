@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dynamic Website Creator</title>
+
+    <style>
+        .container {
+            border: 1px solid rgb(8, 3, 3);
+            background-color: #ccc;
+            height: 100vh;
+        }
+        .card-container {
+            display: flex;
+            align-items: center;
+            gap: 30px;
+            flex-wrap: wrap;
+        }
+        .card {
+            width: 250px;
+            padding: 15px;
+            border: 1px solid black;
+            background-color: #fff;
+        }
+        button{
+            padding: 8px 15px;
+            background-color: #2adeee;
+            outline: none;
+            cursor: pointer;
+        }
+    </style>
+
+</head>
+<body>
+    
+    <div class="container">
+        <button id="card-button" type="button">Add Card</button>
+        <hr>
+        <div class="card-container"></div>
+    </div>
+
+
+    <script>
+        let onBtnClick = document.querySelector('#card-button');
+
+        let cardCount = 0;
+    
+     let insertCard = () => {
+        cardCount++;
+        createCard();
+     }
+
+   let  createCard = () => {
+
+        let title = `Video Title ${cardCount}`;
+        let channelName = `CodeWithHariom`;
+        let views = '1000';
+        let oldMonths = '6';
+        let duration = '10:22';
+        let thumbnail = 'https://www.youtube.com/watch?v=V4ohRrvu4Ok&list=PLu0W_9lII9agq5TrH9XLIKQvv0iaF2X3w&index=70&pp=iAQB';
+
+
+        let cardCont = document.querySelector('.card-container');
+
+        let genCard = document.createElement('div');
+        genCard.className = 'card';
+
+        genCard.innerHTML = `
+          <div>
+          <p><b>Title -</b> ${title}</p>
+          <p>${channelName}</p>
+          <p>${views}</p>
+          <p>${oldMonths}</p>
+          <p>${duration}</p>
+          <img src="${thumbnail}" alt="${title}">
+          </div>
+          `;
+
+        cardCont.append(genCard);
+     }
+     
+     onBtnClick.addEventListener('click',insertCard);
+
+    </script>
+
+</body>
+</html>
